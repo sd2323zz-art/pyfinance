@@ -90,7 +90,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
                   <div className="px-4 py-2 bg-[#222d42] text-[11px] text-[#5a6a8a] flex items-center gap-2 border-b border-[#2a3550]">
                     <span>🐍</span> Python
                   </div>
-                  <pre className="px-5 py-4 font-mono text-[13px] leading-[1.7] text-[#e8ecf4] overflow-x-auto">
+                  <pre className="code-display-pre px-5 py-4 font-mono text-[13px] leading-[1.7] text-[#e8ecf4] overflow-x-auto">
                     {section.code}
                   </pre>
                   {section.note && (

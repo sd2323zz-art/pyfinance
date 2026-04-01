@@ -33,7 +33,7 @@ export default function CodeEditor({ code: initialCode, onRun, isRunning, hint }
   return (
     <div className="mobile-block-inset border border-border rounded-[10px] overflow-hidden my-4 bg-code">
       <div className="flex min-h-[120px]">
-        <div className="py-3.5 bg-black/20 min-w-[44px] text-right select-none">
+        <div className="code-linenums py-3.5 bg-black/20 min-w-[44px] text-right select-none shrink-0">
           {Array.from({ length: lineCount }, (_, i) => (
             <div key={i} className="font-mono text-xs text-t-muted leading-[1.7] px-2.5">
               {i + 1}
@@ -42,7 +42,7 @@ export default function CodeEditor({ code: initialCode, onRun, isRunning, hint }
         </div>
         <textarea
           ref={textareaRef}
-          className="flex-1 bg-transparent border-none outline-none text-t-primary font-mono text-[13px] leading-[1.7] p-3.5 pl-4 resize-none"
+          className="code-textarea flex-1 bg-transparent border-none outline-none text-t-primary font-mono text-[13px] leading-[1.7] p-3.5 pl-4 resize-none overflow-x-auto whitespace-nowrap"
           style={{ tabSize: 4 }}
           value={code}
           onChange={(e) => setCode(e.target.value)}
