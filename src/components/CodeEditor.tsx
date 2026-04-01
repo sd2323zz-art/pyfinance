@@ -42,7 +42,7 @@ export default function CodeEditor({ code: initialCode, onRun, isRunning, hint }
         </div>
         <textarea
           ref={textareaRef}
-          className="code-textarea flex-1 bg-transparent border-none outline-none text-t-primary font-mono text-[13px] leading-[1.7] p-3.5 pl-4 resize-none overflow-x-auto whitespace-nowrap"
+          className="code-textarea flex-1 bg-transparent border-none outline-none text-t-primary font-mono text-[13px] leading-[1.7] p-3.5 pl-4 resize-none overflow-x-auto whitespace-pre"
           style={{ tabSize: 4 }}
           value={code}
           onChange={(e) => setCode(e.target.value)}

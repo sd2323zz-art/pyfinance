@@ -58,15 +58,14 @@ body {
   .code-textarea {
     font-size: 12px !important;
     padding-left: 8px !important;
-    white-space: nowrap !important;
+    white-space: pre !important;
     overflow-x: auto !important;
-    word-wrap: normal !important;
   }
 
   /* Code display blocks in lessons */
   .code-display-pre {
     font-size: 12px !important;
-    white-space: nowrap !important;
+    white-space: pre !important;
     overflow-x: auto !important;
   }
 }
