@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       }
     >
-      <div className="max-w-4xl mx-auto px-6 py-10 max-lg:px-4">
+      <div className="max-w-5xl mx-auto px-10 py-10 max-lg:px-5">
         {/* Hero */}
         <div className="text-center mb-12">
           <h1
@@ -40,8 +40,8 @@ export default function HomePage() {
 
         {/* Stages */}
         {STAGES.map((stage, si) => (
-          <div key={stage.id} className="mb-10">
-            <div className="flex items-center gap-3 mb-4">
+          <div key={stage.id} className="mb-12">
+            <div className="flex items-center gap-4 mb-5">
               <span className="text-2xl">{stageIcons[si]}</span>
               <div>
                 <h2 className="text-lg font-bold">
@@ -50,12 +50,12 @@ export default function HomePage() {
                 <span className="text-xs text-[#5a6a8a]">{stage.days}</span>
               </div>
             </div>
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {LESSONS.filter((l) => l.stage === stage.id).map((lesson) => (
                 <Link
                   key={lesson.id}
                   href={`/lesson/${lesson.id}`}
-                  className="block p-4 rounded-xl border border-[#2a3550] bg-[#1a2235] hover:border-[#4f8fff] hover:bg-[#4f8fff]/[0.08] transition-all no-underline group"
+                  className="block p-5 rounded-xl border border-[#2a3550] bg-[#1a2235] hover:border-[#4f8fff] hover:bg-[#4f8fff]/[0.08] transition-all no-underline group"
                 >
                   <div className="flex items-start gap-3">
                     <div
