@@ -33,6 +33,19 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Mobile RWD overrides */
+@media (max-width: 768px) {
+  .mobile-pad {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .mobile-block-inset {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;

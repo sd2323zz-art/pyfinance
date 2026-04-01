@@ -16,7 +16,7 @@ export default function QuizBlock({ question, options, explanation }: QuizBlockP
   const isCorrect = submitted && selected !== null && options[selected]?.correct;
 
   return (
-    <div className="border border-border rounded-xl overflow-hidden my-6 bg-card">
+    <div className="mobile-block-inset border border-border rounded-xl overflow-hidden my-6 bg-card">
       <div className="px-5 py-3 text-[13px] font-bold text-gold bg-gold/[0.08] tracking-wider border-b border-border">
         📝 小測驗
       </div>

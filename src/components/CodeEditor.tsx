@@ -31,7 +31,7 @@ export default function CodeEditor({ code: initialCode, onRun, isRunning, hint }
   const lineCount = code.split("\n").length;
 
   return (
-    <div className="border border-border rounded-[10px] overflow-hidden my-4 bg-code">
+    <div className="mobile-block-inset border border-border rounded-[10px] overflow-hidden my-4 bg-code">
       <div className="flex min-h-[120px]">
         <div className="py-3.5 bg-black/20 min-w-[44px] text-right select-none">
           {Array.from({ length: lineCount }, (_, i) => (

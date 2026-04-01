@@ -71,7 +71,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
       }
     >
       <div
-        className="max-w-[900px] mx-auto px-12 py-12 pb-32 max-md:px-8"
+        className="mobile-pad max-w-[900px] mx-auto px-12 py-12 pb-32"
         ref={contentRef}
       >
         {lesson.sections.map((section, sIdx) => {
@@ -86,7 +86,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
           if (section.type === "code_display") {
             return (
               <div key={sIdx} className="mb-12">
-                <div className="border border-[#2a3550] rounded-[10px] overflow-hidden my-5 bg-[#0d1321]">
+                <div className="mobile-block-inset border border-[#2a3550] rounded-[10px] overflow-hidden my-5 bg-[#0d1321]">
                   <div className="px-4 py-2 bg-[#222d42] text-[11px] text-[#5a6a8a] flex items-center gap-2 border-b border-[#2a3550]">
                     <span>🐍</span> Python
                   </div>

@@ -11,7 +11,7 @@ export default function OutputPanel({ output, error, hint }: OutputPanelProps) {
 
   if (hint) {
     return (
-      <div className="my-3 border border-border rounded-lg overflow-hidden">
+      <div className="mobile-block-inset my-3 border border-border rounded-lg overflow-hidden">
         <div className="px-3.5 py-1.5 text-[11px] font-semibold text-gold bg-gold/10 tracking-wide">
           ✏️ 還沒完成喔
         </div>
@@ -23,7 +23,7 @@ export default function OutputPanel({ output, error, hint }: OutputPanelProps) {
   }
 
   return (
-    <div className="my-3 border border-border rounded-lg overflow-hidden">
+    <div className="mobile-block-inset my-3 border border-border rounded-lg overflow-hidden">
       <div
         className={`px-3.5 py-1.5 text-[11px] font-semibold tracking-wide ${
           error ? "text-red bg-red/10" : "text-green bg-green/10"

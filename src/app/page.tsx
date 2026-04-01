@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       }
     >
-      <div className="px-12 py-10 max-md:px-8 max-w-[900px] mx-auto">
+      <div className="mobile-pad px-12 py-10 max-w-[900px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-12">
           <h1

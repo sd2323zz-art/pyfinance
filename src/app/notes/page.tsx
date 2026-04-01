@@ -40,7 +40,7 @@ export default function NotesPage() {
         </div>
       }
     >
-      <div className="max-w-[900px] mx-auto px-12 py-12 max-md:px-8">
+      <div className="mobile-pad max-w-[900px] mx-auto px-12 py-12">
         {notes.length === 0 ? (
           <div className="text-center py-20">
             <div className="text-5xl mb-4">📝</div>
