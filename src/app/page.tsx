@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       }
     >
-      <div className="px-12 py-10 max-lg:px-6 max-w-[1200px] mx-auto">
+      <div className="px-12 py-10 max-lg:px-6 max-w-[960px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-12">
           <h1

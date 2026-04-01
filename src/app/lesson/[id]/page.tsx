@@ -71,13 +71,13 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
       }
     >
       <div
-        className="max-w-[900px] mx-auto px-12 py-10 pb-32 max-lg:px-6"
+        className="max-w-[960px] mx-auto px-12 py-12 pb-32 max-lg:px-6"
         ref={contentRef}
       >
         {lesson.sections.map((section, sIdx) => {
           if (section.type === "content") {
             return (
-              <div key={sIdx} className="mb-10">
+              <div key={sIdx} className="mb-12">
                 <MarkdownRenderer content={section.body} />
               </div>
             );
@@ -85,7 +85,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
 
           if (section.type === "code_display") {
             return (
-              <div key={sIdx} className="mb-10">
+              <div key={sIdx} className="mb-12">
                 <div className="border border-[#2a3550] rounded-[10px] overflow-hidden my-5 bg-[#0d1321]">
                   <div className="px-4 py-2 bg-[#222d42] text-[11px] text-[#5a6a8a] flex items-center gap-2 border-b border-[#2a3550]">
                     <span>🐍</span> Python
@@ -107,11 +107,11 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
             const exId = `${lesson.id}-ex-${exerciseCounter++}`;
             const out = outputs[exId];
             return (
-              <div key={sIdx} className="mb-10">
-                <div className="text-xs font-bold text-[#34d399] tracking-[1.5px] uppercase mb-2.5 flex items-center gap-2">
+              <div key={sIdx} className="mb-12">
+                <div className="text-xs font-bold text-[#34d399] tracking-[1.5px] uppercase mb-3 flex items-center gap-2">
                   <span>⌨️</span> 動手練習
                 </div>
-                <div className="text-[15px] text-[#e8ecf4] mb-4 leading-relaxed">
+                <div className="text-[15px] text-[#e8ecf4] mb-5 leading-[1.9]">
                   {section.instruction}
                 </div>
                 <CodeEditor
@@ -133,7 +133,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
 
           if (section.type === "quiz") {
             return (
-              <div key={sIdx} className="mb-10">
+              <div key={sIdx} className="mb-12">
                 <QuizBlock
                   question={section.question}
                   options={section.options}

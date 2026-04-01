@@ -56,7 +56,7 @@ function renderMarkdown(text: string): string {
     )
     .replace(
       /^> (.+)$/gm,
-      '<blockquote style="border-left:3px solid #4f8fff;padding:10px 16px;margin:16px 0;background:rgba(79,143,255,0.15);border-radius:0 8px 8px 0;font-size:14.5px;color:#8896b3;font-style:italic">$1</blockquote>'
+      '<blockquote style="border-left:3px solid #4f8fff;padding:10px 16px;margin:16px 0;background:rgba(79,143,255,0.15);border-radius:0 8px 8px 0;font-size:14.5px;color:#8896b3;font-style:italic;line-height:2">$1</blockquote>'
     )
     .replace(
       /^• (.+)$/gm,
@@ -75,7 +75,7 @@ interface MarkdownRendererProps {
 export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
     <div
-      style={{ fontSize: "15.5px", lineHeight: 1.85, color: "#e8ecf4" }}
+      style={{ fontSize: "15.5px", lineHeight: 2.2, color: "#e8ecf4" }}
       dangerouslySetInnerHTML={{ __html: renderMarkdown(content) }}
     />
   );

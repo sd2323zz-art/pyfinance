@@ -49,10 +49,8 @@ export default function AppShell({ children, pyodideStatus, topbar }: AppShellPr
             </span>
           )}
         </header>
-        <div className="flex-1 overflow-y-auto flex justify-center">
-          <div className="w-full">
-            {children}
-          </div>
+        <div className="flex-1 overflow-y-auto w-full">
+          {children}
         </div>
       </main>
     </div>
