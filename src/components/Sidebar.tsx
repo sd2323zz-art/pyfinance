@@ -36,11 +36,11 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             數金 MA 面試衝刺
           </div>
         </div>
-        <nav className="flex-1 overflow-y-auto pl-5 pr-4 py-5">
+        <nav className="flex-1 overflow-y-auto pl-5 pr-4 py-5 space-y-1">
           <Link
             href="/"
             onClick={onClose}
-            className={`block w-full text-left text-[13.5px] px-4 py-3 rounded-lg cursor-pointer transition-all no-underline mb-2 ${
+            className={`block w-full text-left text-[13.5px] px-4 py-[10px] rounded-lg cursor-pointer transition-all no-underline mb-2 ${
               pathname === "/"
                 ? "bg-accent/15 text-accent font-medium border-l-[3px] border-accent"
                 : "text-t-secondary hover:bg-accent/15 hover:text-t-primary"
@@ -51,7 +51,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           <Link
             href="/notes"
             onClick={onClose}
-            className={`block w-full text-left text-[13.5px] px-4 py-3 rounded-lg cursor-pointer transition-all no-underline mb-4 ${
+            className={`block w-full text-left text-[13.5px] px-4 py-[10px] rounded-lg cursor-pointer transition-all no-underline mb-4 ${
               pathname === "/notes"
                 ? "bg-accent/15 text-accent font-medium border-l-[3px] border-accent"
                 : "text-t-secondary hover:bg-accent/15 hover:text-t-primary"
@@ -71,7 +71,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                     key={lesson.id}
                     href={`/lesson/${lesson.id}`}
                     onClick={onClose}
-                    className={`block w-full text-left text-[13.5px] px-4 py-3 rounded-lg cursor-pointer transition-all leading-snug no-underline ${
+                    className={`block w-full text-left text-[13.5px] px-4 py-[10px] rounded-lg cursor-pointer transition-all leading-snug no-underline ${
                       isActive
                         ? "bg-accent/15 text-accent font-medium border-l-[3px] border-accent"
                         : "text-t-secondary hover:bg-accent/15 hover:text-t-primary"
