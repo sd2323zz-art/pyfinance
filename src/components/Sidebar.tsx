@@ -26,7 +26,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           lg:relative lg:translate-x-0
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="px-7 pt-7 pb-5 border-b border-border">
+        <div className="pl-6 pr-5 pt-7 pb-5 border-b border-border">
           <Link href="/" onClick={onClose} className="no-underline">
             <div className="font-display text-[22px] font-black bg-gradient-to-br from-accent to-green bg-clip-text text-transparent tracking-tight">
               PyFinance
@@ -36,7 +36,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             數金 MA 面試衝刺
           </div>
         </div>
-        <nav className="flex-1 overflow-y-auto px-4 py-5">
+        <nav className="flex-1 overflow-y-auto pl-5 pr-4 py-5">
           <Link
             href="/"
             onClick={onClose}

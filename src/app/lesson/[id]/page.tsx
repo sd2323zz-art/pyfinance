@@ -71,7 +71,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
       }
     >
       <div
-        className="max-w-[820px] mx-auto px-12 py-10 pb-32 max-lg:px-5"
+        className="max-w-[900px] mx-auto px-12 py-10 pb-32 max-lg:px-6"
         ref={contentRef}
       >
         {lesson.sections.map((section, sIdx) => {

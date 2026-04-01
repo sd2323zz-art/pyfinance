@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       }
     >
-      <div className="max-w-5xl mx-auto px-10 py-10 max-lg:px-5">
+      <div className="px-12 py-10 max-lg:px-6 max-w-[1200px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-12">
           <h1
@@ -50,7 +50,7 @@ export default function HomePage() {
                 <span className="text-xs text-[#5a6a8a]">{stage.days}</span>
               </div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2">
               {LESSONS.filter((l) => l.stage === stage.id).map((lesson) => (
                 <Link
                   key={lesson.id}
