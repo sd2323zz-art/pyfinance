@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       }
     >
-      <div className="px-12 py-10 max-lg:px-6 max-w-[960px] mx-auto">
+      <div className="px-12 py-10 max-md:px-6 max-w-[900px] mx-auto">
         {/* Hero */}
         <div className="text-center mb-12">
           <h1
@@ -80,7 +80,7 @@ export default function HomePage() {
         <div className="text-center mt-12 mb-8">
           <Link
             href={`/lesson/${LESSONS[0].id}`}
-            className="inline-block px-8 py-3 bg-[#4f8fff] text-white font-semibold rounded-lg hover:bg-[#6ba3ff] transition-all no-underline hover:-translate-y-0.5"
+            className="inline-block px-8 py-3 max-md:px-10 max-md:py-4 max-md:text-base bg-[#4f8fff] text-white font-semibold rounded-lg hover:bg-[#6ba3ff] transition-all no-underline hover:-translate-y-0.5"
           >
             開始學習 →
           </Link>

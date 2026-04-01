@@ -63,7 +63,7 @@ export default function CodeEditor({ code: initialCode, onRun, isRunning, hint }
           <div />
         )}
         <button
-          className="bg-accent border-none text-white font-sans text-[13px] font-semibold px-5 py-1.5 rounded-md cursor-pointer transition-all hover:bg-accent-hover hover:-translate-y-px disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+          className="bg-accent border-none text-white font-sans text-[13px] max-md:text-base font-semibold px-5 py-1.5 max-md:px-7 max-md:py-2.5 rounded-md cursor-pointer transition-all hover:bg-accent-hover hover:-translate-y-px disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           onClick={() => onRun(code)}
           disabled={isRunning}
         >

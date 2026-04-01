@@ -71,7 +71,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
       }
     >
       <div
-        className="max-w-[960px] mx-auto px-12 py-12 pb-32 max-lg:px-6"
+        className="max-w-[900px] mx-auto px-12 py-12 pb-32 max-md:px-6"
         ref={contentRef}
       >
         {lesson.sections.map((section, sIdx) => {
@@ -154,7 +154,7 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
           {prevLesson ? (
             <Link
               href={`/lesson/${prevLesson.id}`}
-              className="px-6 py-2.5 bg-[#222d42] border border-[#2a3550] text-[#e8ecf4] text-[13.5px] font-medium rounded-lg hover:border-[#4f8fff] hover:bg-[#4f8fff]/15 transition-all no-underline"
+              className="px-6 py-2.5 max-md:px-8 max-md:py-3.5 max-md:text-base bg-[#222d42] border border-[#2a3550] text-[#e8ecf4] text-[13.5px] font-medium rounded-lg hover:border-[#4f8fff] hover:bg-[#4f8fff]/15 transition-all no-underline"
             >
               ← 上一課
             </Link>
@@ -164,14 +164,14 @@ export default function LessonPage({ params }: { params: Promise<{ id: string }>
           {nextLesson ? (
             <Link
               href={`/lesson/${nextLesson.id}`}
-              className="px-6 py-2.5 bg-[#4f8fff] border border-[#4f8fff] text-white text-[13.5px] font-medium rounded-lg hover:bg-[#6ba3ff] transition-all no-underline"
+              className="px-6 py-2.5 max-md:px-8 max-md:py-3.5 max-md:text-base bg-[#4f8fff] border border-[#4f8fff] text-white text-[13.5px] font-medium rounded-lg hover:bg-[#6ba3ff] transition-all no-underline"
             >
               下一課 →
             </Link>
           ) : (
             <Link
               href="/"
-              className="px-6 py-2.5 bg-[#34d399] border border-[#34d399] text-white text-[13.5px] font-medium rounded-lg hover:bg-[#34d399]/80 transition-all no-underline"
+              className="px-6 py-2.5 max-md:px-8 max-md:py-3.5 max-md:text-base bg-[#34d399] border border-[#34d399] text-white text-[13.5px] font-medium rounded-lg hover:bg-[#34d399]/80 transition-all no-underline"
             >
               ✅ 完成所有課程！
             </Link>
