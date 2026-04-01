@@ -17,7 +17,7 @@ export default function AppShell({ children, pyodideStatus, topbar }: AppShellPr
     <div className="flex h-screen bg-bg text-t-primary font-sans overflow-hidden">
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <main className="flex-1 flex flex-col overflow-hidden min-w-0">
-        <header className="flex items-center justify-between px-10 py-4 border-b border-border bg-bg-sec gap-4 shrink-0 max-md:px-6">
+        <header className="flex items-center justify-between px-10 py-4 border-b border-border bg-bg-sec gap-4 shrink-0 max-md:px-8">
           <div className="flex items-center gap-3">
             <button
               className="hidden max-lg:block bg-transparent border border-border text-t-secondary text-2xl px-3.5 py-2.5 rounded-md cursor-pointer"
